@@ -1,8 +1,0 @@
-package web.service;
-
-import web.model.Car;
-import java.util.List;
-
-public interface Factory {
-    List<Car> getCars(int count);
-}

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class CarFactory implements Factory{
+public class CarFactory {
 
     public List<Car> getCars(int count){
         List<Car> cars = new ArrayList<>();
