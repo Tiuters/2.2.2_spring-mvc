@@ -14,8 +14,8 @@ public class CarController {
     private CarFactory carFactory;
 
     @GetMapping("/cars")
-    public String printCars(@RequestParam(value = "count", required = false) Integer count,
-                            Model model) {
+    public String printCars(@RequestParam(value = "count",
+        required = false, defaultValue = "0") Integer count, Model model) {
 
         model.addAttribute("caMod", carFactory.getCars(count));
 

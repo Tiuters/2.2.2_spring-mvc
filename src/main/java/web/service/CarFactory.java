@@ -17,7 +17,12 @@ public class CarFactory {
         cars.add(new Car("Mouse", "perpet", 3));
         cars.add(new Car("Zzz", "evn", 4));
         cars.add(new Car("Ggg", "mon", 4));
+        cars.add(new Car("Hhh", "mon", 4));
+        cars.add(new Car("Jjj", "mon", 4));
 
+                if (count >= 5) {
+            return cars;
+        }
         return cars
             .stream()
             .limit(count)
